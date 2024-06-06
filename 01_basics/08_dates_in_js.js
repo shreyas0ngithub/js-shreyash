@@ -9,8 +9,20 @@ let myDate = new Date()
 //console.log(myDate.toISOString())
 //console.log(typeof myDate)
 
-//let myCreatedDate = new Date(2023, 0 , 19)  //YYYY/M/DD , months are from 0-11(jan-dec)
-//console.log(myCreatedDate.toDateString())
+//let myCreatedDate = new Date(2023, 0 , 19)  YYYY/M/DD , months are from 0-11(jan-dec)
+////console.log(myCreatedDate.toDateString())
 
 let myCreatedDate = new Date(2023, 0 , 19, 5, 3)
-console.log(myCreatedDate.toLocaleString())
+//console.log(myCreatedDate.toLocaleString())
+
+let myTimeStamp = Date.now()
+
+//console.log(myTimeStamp)  //miliseconds
+//console.log(myCreatedDate.getTime())
+
+let newDate = new Date()
+
+console.log(newDate.toLocaleString('default', {
+    weekday: 'long',
+    month: "long"
+}))
