@@ -1,7 +1,8 @@
 "use strict"; //treat all js code as newer version
  
  //Data types in js
- //numberbigInt
+ //number 
+//bigInt
 //string
 //boolean
 //null -> standalone value
