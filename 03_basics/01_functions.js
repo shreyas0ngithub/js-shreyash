@@ -42,20 +42,45 @@ const result = addTwoNumbers1(4, 8)
 
 function loginUserMessage (username){
     if(!username){                   //i.e. if(username == undefined)
-        console.log("Please enter a username")
+        // console.log("Please enter a username")
         return
     }
     return `${username} just logged in`
 }
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
 
 //default values
 //function loginUserMessage (username = "sam"){
 //default values are overridden if values are passed
 
+//********************************************************************* */
 
+function calculateCartPrice (val1, val2, ...num1){
+    return num1
+}
 
+// console.log(calculateCartPrice(200,400,500,2000))
 
+const user ={
+    username: "shreyas",
+    price:199
+}
 
+function handleObject(anyObject){
+    console.log (`Username is ${anyObject.username} and price is ${anyObject.price}`)
+}
+// handleObject(user)
 
+// handleObject({
+//     username: "any",
+//     price: 399
+// })
 
+const myNewArray = [200, 300, 400]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([10,30,40]))
