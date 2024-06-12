@@ -13,6 +13,10 @@
     arr++
  }
 
+
+let score = 11
 do {
-    
-} while (G);
+   console.log(`Score is ${score}`);
+    score++
+} while (score<=10);
+
