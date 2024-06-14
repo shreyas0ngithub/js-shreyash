@@ -4,8 +4,10 @@
 
  //objects literals
 
-/*symbol in object*/ const mySym = Symbol("key1")             //to declare a symbol in an object 
-                                                             //use [] for key of symbol
+/*symbol in object*/ 
+
+const mySym = Symbol()             //to declare a symbol in an object 
+console.log(mySym);                                                             //use [] for key of symbol
  const Jsuser = {                                            // otherwise symbol in object will be treated as
     name : "shreyas",         //key : value pair             //normal string like other key value pairs
     "full name" : "Shreyas Shatrakar",

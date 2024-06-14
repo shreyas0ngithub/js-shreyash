@@ -4,15 +4,20 @@ const user = {
 
     welcomeMessage: function(){
         console.log(`${this.username} , welcome to website`)
-        console.log(this)
-    }
-}
+        console.log(this)     //o/p-> {
+        }                           //   username: 'shreyas',
+        }                            //   price: 999,
+                                    //   welcomeMessage: [Function: welcomeMessage]
+                                    // }
+
+
 
 // user.welcomeMessage()
 // user.username = "sam"
 // user.welcomeMessage()
 
-console.log(this)
+
+// console.log(this)
 
 // function chai (){
 //     let username = "shreyas"
@@ -29,7 +34,7 @@ const chai = ()=> {
 
 
 
-//++++++basic arraow function+++++++++
+//++++++basic arrow function+++++++++
 // const addTwo = (num1, num2) =>{
 //     return num1+num2
 // }
@@ -41,6 +46,6 @@ const chai = ()=> {
  
  const addTwo = (num1,num2) => ({username: "shreyas"})    //object return krna hai to () must hai
  
- console.log(addTwo(3, 4))
+//  console.log(addTwo(3, 4))
 
  

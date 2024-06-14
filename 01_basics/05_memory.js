@@ -7,14 +7,14 @@ let myOriginalName = "Shreyas"
 let anotherName = "johnwick"
 anotherName = myOriginalName
 
-console.log(myOriginalName)
-console.log(anotherName)
+// console.log(myOriginalName)
+// console.log(anotherName)
 
 let userOne = {               //object definition syntax
     email: "user@google.com",
     userId: 1001
 }
-                                             //reference is passed in case of heap(non primitive) values
+                                             //reference(address) is passed in case of heap(non primitive) values
 let userTwo = {
     email : "shreyas@google.com",
     userId : 1002

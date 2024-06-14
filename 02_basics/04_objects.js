@@ -32,37 +32,37 @@ const obj3 = {...obj1, ...obj2}
 //console.log(obj3)
 
 //how values in objects come from database
-// const Users = [{
-//     id: 1,
-//     email: "s@gmail.com"
-// },
-// {
-//     id: 21,
-//     email: "s@gmail.com"
-// },
-// {
-//     id: 13,
-//     email: "s@gmail.com"
-// },{
-//     id: 41,
-//     email: "s@gmail.com"
-// },{
-//     id: 51,
-//     email: "s@gmail.com"
-// },{
-//     id: 61,
-//     email: "s@gmail.com"
-// },{
-//     id: 1,
-//     email: "s@gmail.com"
-// }]
+const Users = [{
+    id: 1,
+    email: "s@gmail.com"
+},
+{
+    id: 21,
+    email: "s@gmail.com"
+},
+{
+    id: 13,
+    email: "s@gmail.com"
+},{
+    id: 41,
+    email: "s@gmail.com"
+},{
+    id: 51,
+    email: "s@gmail.com"
+},{
+    id: 61,
+    email: "s@gmail.com"
+},{
+    id: 1,
+    email: "s@gmail.com"
+}]
 
-// console.log(Users[1].email)
+console.log(Users[1].email)
 
 
 //console.log(Object.keys(tinderUser))   //array of all keys
 //console.log(Object.values(tinderUser))   //array 0f all values
-//console.log(Object.entries(tinderUser))     //ar5ray pf all key-value pairs
+//console.log(Object.entries(tinderUser))     //array pf all key-value pairs
 
 // console.log(tinderUser.hasOwnProperty('isLoggedin'))
 
@@ -81,8 +81,8 @@ const obj3 = {...obj1, ...obj2}
 //console.log(courseInstructor)
 
 //also
-const {courseInstructor : Instructor} = course
-console.log(Instructor) 
+// const {courseInstructor : Instructor} = course
+// console.log(Instructor) 
 
 //json
 // {

@@ -25,14 +25,17 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 //++++++++++++++++ slice,splice methods
 
+//splice-> @returns — An array containing the elements that were deleted.
+
 console.log("A",myArr)      //Original Array
 
 const myn1 = myArr.slice(1, 4)  //end range is not included in slice
 
-console.log(myn1)           //sliced array
+console.log(myn1)           //sliced array[ 2, 3, 4 ]
 
 console.log("B", myArr)     //Array after using slice(reamins intact)
 
 const myn2 = myArr.splice(1, 4)   //end range is included in splice
+console.log(myn2)             //spliced array[ 2, 3, 4, 5 ]
 console.log("C",myArr)       //Array after using splice(spliced elements are removed from original array ) 
-console.log(myn2)             //spliced array
+

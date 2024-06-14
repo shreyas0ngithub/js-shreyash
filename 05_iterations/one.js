@@ -36,11 +36,11 @@
 //     console.log(`Value of i is ${index}`);
 
 // }
-for (let index = 0; index <= 20; index++) {
+for (let index = 0; index <= 10; index++) {
     if (index ==5) {
         console.log(`Detected 5`);
         continue ; //ek bar skip kardo(is wale iteration ko skip krke next iteration)
     }
-    console.log(`Value of i is ${index}`);
+    console.log(`Value of i is ${index}`);//didnt run for 5
 
 }

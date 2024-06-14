@@ -8,7 +8,7 @@
 
 // o/p - undefined
 
-//  filter()- filter bhi calback funtion hi mangta hia
+//  filter()- filter bhi callback funtion hi mangta hia
 //  filter() values RETURN KARTA HAI
 const nums= [1,2,3,4,5,6,7,8,9,10]        
 // console.log( nums.filter( (key)=> key>4 ))

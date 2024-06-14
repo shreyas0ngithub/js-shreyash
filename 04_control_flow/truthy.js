@@ -12,7 +12,7 @@ if(userEmail){
 
 
 // falsy values (values that are assumed to be false)
-// => false, 0, -0(neg zero), BigInt 0n, "", nll, undefined, Nan(not a number)
+// => false, 0, -0(neg zero), BigInt 0n, "", null, undefined, Nan(not a number)
 
 //truthy values (values that are assumed to be true)
 // =>"0", 'false', " ", [], {}empty obj, function(){}empty function)
@@ -33,8 +33,8 @@ if(Object.keys(emptyObj).length === 0){
 let val1;
 // val1 = 5 ?? 10
 // val1 = null ?? 10
-// val1 = undefined ?? 15
-val1  = null ?? 10 ?? 20
+val1 = undefined ?? 15
+// val1  = null ?? 10 ?? 20
 
 console.log(val1)
 
@@ -44,4 +44,4 @@ console.log(val1)
 // condition ? true : false
 
 const iceTeaPrice = 100
-iceTeaPrice >= 80 ?  console.log("more than 80") : console.log("less tha n 80")
+iceTeaPrice >= 80 ?  console.log("more than 80") : console.log("less than 80")

@@ -1,7 +1,7 @@
 const marvel_heroes = ["thor","hulk","CA"]
 const dc_heroes = ["superman","flash","batman"]
 
-//marvel_heroes.push(dc_heroes) adds arrray as a new element
+//marvel_heroes.push(dc_heroes) adds array as a new element
 
 // console.log(marvel_heroes)
 // console.log(marvel_heroes[3][1]) accessing elements of dc_heroes
@@ -9,7 +9,7 @@ const dc_heroes = ["superman","flash","batman"]
 // const allHeroes = marvel_heroes.concat(dc_heroes)
 // console.log(allHeroes)
 
-// const all_new_heroes = [...marvel_heroes, ...dc_heroes]  //same as concst
+// const all_new_heroes = [...marvel_heroes, ...dc_heroes]  //same as concat
 // console.log(all_new_heroes)
 
 // const another_array =  [1,[2,6],[4,[5,8,9],3]]
@@ -19,11 +19,8 @@ const dc_heroes = ["superman","flash","batman"]
 
 
 
-
-
-
 console.log(Array.isArray("Shreyas"))
-console.log(Array.from("Shreyas"))
+console.log(Array.of(1,2,3))
 console.log(Array.from({namme:"Shreyas"}))   //.return emopty string 
 
 
