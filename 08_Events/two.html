@@ -1,0 +1,39 @@
+<!-- setTimeout -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayShreyas = function(){
+        console.log("Shreyas");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "BEST JS SERIES"
+    }
+    
+
+    // 5 seconds k bad
+    // setTimeout(sayShreyas,5000) //sayShreyas is reference, not- sayShreyas() is call
+    // setTimeout(changeText,5000)
+
+    const changeME = setTimeout(changeText, 2000);
+
+    // clearTimeout(changeME)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeME)
+        console.log('STOPPED');
+    })
+
+
+
+</script>
+</html>
