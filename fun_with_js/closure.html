@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure and Chai</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="Red">Red</button>
+    <button id="yellow">Yellow</button>
+</body>
+
+<script>
+    // Lexical Scoping
+    function fun1(){
+        let pehle_me = "Shreyas"
+        function fun2(){
+            console.log(pehle_me);
+        }
+        fun2()
+    }
+    fun1()
+    // console.log(pehle_me); // ReferenceError: pehle_me is not defined
+
+    // Closure
+    function baharWala(){
+        let naam = "Anthony"
+
+        function naamDikha(){
+            console.log(naam);
+        }
+        return naamDikha
+    }
+
+    const kuchDikha = baharWala()  // yaha kuchDikha me bs reference aaya mgr uske sath 
+    kuchDikha()                    // pura lexical scope of baharWala bhi aaya
+                                   // jis wajah se naam bhi aaya
+</script>     
+<script>
+    //  real world problem using lexical scope and closure
+    // document.getElementById('Red').onclick = function(){
+    //     document.body.style.backgroundColor = `Red`
+    // } 
+    // document.getElementById('yellow').onclick = function(){
+    //     document.body.style.backgroundColor = `yellow`
+    // } 
+
+    function changeBgColor(color){
+        // document.body.style.backgroundColor = `${color}` //aise nahi hoga, directly run ho ja raha hai
+
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.getElementById('Red').onclick = changeBgColor('Red')
+    document.getElementById('yellow').onclick = changeBgColor('yellow')
+
+</script>                    
+</html>
